@@ -1,0 +1,60 @@
+.benefit{
+    display: flex;
+
+    &__item{
+        flex: 1;
+        margin: 0 3%;
+        text-align: center;
+        position: relative;
+
+        &::before{
+            content: url('/img/dot.png');
+            position: absolute;
+            top: 50px;
+            right: 0;
+            transform: translateX(92%);
+        }
+
+        &:last-child{
+            margin-right: 0;
+
+            &::before{
+                display: none;
+            }
+        }
+
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+    &__image{
+        margin-bottom: 18px;
+    }
+
+    &__image-wrapper{
+        display: inline-block;
+        width: 126px;
+        height: 126px;
+        border-radius: 50%;
+        position: relative;
+        background-color: #f2f5f4;
+        overflow: hidden;
+    }
+
+    &__img{
+        width: 75px;
+        height: 69px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title{
+        color: black;
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 11px;
+    }
+}

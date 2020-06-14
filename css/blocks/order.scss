@@ -1,0 +1,24 @@
+.order{
+    background: url('/img/manyrapsberry.png') center center no-repeat;
+    background-size: cover;
+    color: #365a49;
+    position: relative;
+
+    &::before{
+        content: url('/img/deliverylist.png');
+        position: absolute;
+        right: 8%;
+        top: 54%;
+    }
+
+    &::after{
+        content: url('/img/blueberry.png');
+        position: absolute;
+        bottom: 22%;
+        left: 10%;
+    }
+}
+.order__title{
+    color: #365a49;
+    margin-bottom: 44px;
+}

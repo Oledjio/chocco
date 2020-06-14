@@ -1,0 +1,18 @@
+.menu_marg_left_right{
+    margin-left: 44px;
+    margin-right: 46px;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+}
+.menu__link{
+    display: flex;
+}
+.menu__item{
+    margin-right: 28px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}

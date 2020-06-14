@@ -1,0 +1,31 @@
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap");
+
+//base
+@import "layout/base";
+
+//blocks
+
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/telephone";
+@import "blocks/main";
+@import "blocks/feature";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/whychocco";
+@import "blocks/benefit";
+@import "blocks/review";
+@import "blocks/person";
+@import "blocks/order";
+@import "blocks/form";
+@import "blocks/radio";
+
+
+
+// @import url('/css/blocks/pager.css');

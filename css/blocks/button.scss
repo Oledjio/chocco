@@ -1,0 +1,41 @@
+.button{
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.main__button{
+    color: #365a49;
+    padding: 20px 38px 16px 35px;
+    background-color: white;
+
+    &:hover{
+        transition: 0.3s;
+        background-color: #365a49;
+        color: white;
+        box-shadow: 0 0 10px #365a49;
+    }
+}
+.button_submit{
+    padding: 19px 36px;
+    color: white;
+    background-color: #365a49;
+
+    &:hover{
+        transition: 0.3s;
+        color: #365a49;
+        background-color: white;
+    }
+}
+.button_reset{
+    padding: 22px 26px;
+    color: #000;
+    background: transparent;
+    text-transform: none;
+
+    &:hover{
+        transition: 0.3s;
+        color: #365a49;
+    }
+}

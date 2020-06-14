@@ -1,0 +1,16 @@
+.main{
+    width: 46%;
+
+    &__title{
+        font-size: 48px;
+        line-height: normal;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__text{
+        font-size: 21px;
+        margin-bottom: 26px;
+        padding-right: 15%;
+    }
+}

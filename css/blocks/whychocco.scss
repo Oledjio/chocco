@@ -1,0 +1,20 @@
+.why-chocco{
+    position: relative;
+    background: url('/img/smallist.png') left top 52% no-repeat;
+
+    &::before{
+        content: url('/img/rapsberry.png');
+        position: absolute;
+        top: 77%;
+    }
+
+    &__title{
+        margin-bottom: 4px;
+    }
+
+    &__text{
+        padding: 0 26%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

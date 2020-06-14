@@ -1,0 +1,34 @@
+.hero{
+    background: url('/img/list.png') right bottom no-repeat;
+    background-color: #86c3d7;
+    height: 100vh;
+    min-height: 650px;
+    color: white;
+    position: relative;
+
+    &::before{
+        content: url('/img/sheet.png');
+        position: absolute;
+        bottom: -50px;
+        left: 2%;
+    }
+    &::after{
+        content: url('/img/decor.png');
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    }
+
+    &__container{
+        background-image: url('/img/batnik.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 50% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-top: 24px;
+        padding-bottom: 47px;
+    }
+}
