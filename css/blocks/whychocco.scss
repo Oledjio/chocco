@@ -1,9 +1,9 @@
 .why-chocco{
     position: relative;
-    background: url('/img/smallist.png') left top 52% no-repeat;
+    background: url('../img/smallist.png') left top 52% no-repeat;
 
     &::before{
-        content: url('/img/rapsberry.png');
+        content: url('../img/rapsberry.png');
         position: absolute;
         top: 77%;
     }

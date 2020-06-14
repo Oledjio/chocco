@@ -8,13 +8,13 @@
     &:last-child{
         margin-bottom: 0;
     }
-    
+
     &_checkbox{
         .radio__visible{
             border-radius: 0;
 
             &::before{
-                background: url('/img/icons/checkmark.svg');
+                background: url('../img/icons/checkmark.svg');
                 background-repeat: no-repeat;
             }
         }

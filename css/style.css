@@ -72,7 +72,7 @@ img {
 }
 
 .hero {
-  background: url("/img/list.png") right bottom no-repeat;
+  background: url("../img/list.png") right bottom no-repeat;
   background-color: #86c3d7;
   height: 100vh;
   min-height: 650px;
@@ -80,19 +80,19 @@ img {
   position: relative;
 }
 .hero::before {
-  content: url("/img/sheet.png");
+  content: url("../img/sheet.png");
   position: absolute;
   bottom: -50px;
   left: 2%;
 }
 .hero::after {
-  content: url("/img/decor.png");
+  content: url("../img/decor.png");
   position: absolute;
   bottom: -50px;
   right: 0;
 }
 .hero__container {
-  background-image: url("/img/batnik.png");
+  background-image: url("../img/batnik.png");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 50% auto;
@@ -244,10 +244,10 @@ img {
 
 .why-chocco {
   position: relative;
-  background: url("/img/smallist.png") left top 52% no-repeat;
+  background: url("../img/smallist.png") left top 52% no-repeat;
 }
 .why-chocco::before {
-  content: url("/img/rapsberry.png");
+  content: url("../img/rapsberry.png");
   position: absolute;
   top: 77%;
 }
@@ -270,7 +270,7 @@ img {
   position: relative;
 }
 .benefit__item::before {
-  content: url("/img/dot.png");
+  content: url("../img/dot.png");
   position: absolute;
   top: 50px;
   right: 0;
@@ -313,19 +313,19 @@ img {
 }
 
 .review-section {
-  background-image: url("/img/reviewslist.png");
+  background-image: url("../img/reviewslist.png");
   background-position: left bottom -25%;
   background-repeat: no-repeat;
   position: relative;
 }
 .review-section::before {
-  content: url("/img/reviewsstraw.png");
+  content: url("../img/reviewsstraw.png");
   position: absolute;
   bottom: -91px;
   z-index: 1;
 }
 .review-section::after {
-  content: url("/img/strawberry.png");
+  content: url("../img/strawberry.png");
   position: absolute;
   right: 0;
   top: 18%;
@@ -335,7 +335,7 @@ img {
   display: flex;
   color: #666666;
   background-color: #f8faf9;
-  background-image: url("/img/branch.png");
+  background-image: url("../img/branch.png");
   background-position: right top;
   background-repeat: no-repeat;
   padding: 51px 188px 34px 45px;
@@ -426,19 +426,19 @@ img {
 }
 
 .order {
-  background: url("/img/manyrapsberry.png") center center no-repeat;
+  background: url("../img/manyrapsberry.png") center center no-repeat;
   background-size: cover;
   color: #365a49;
   position: relative;
 }
 .order::before {
-  content: url("/img/deliverylist.png");
+  content: url("../img/deliverylist.png");
   position: absolute;
   right: 8%;
   top: 54%;
 }
 .order::after {
-  content: url("/img/blueberry.png");
+  content: url("../img/blueberry.png");
   position: absolute;
   bottom: 22%;
   left: 10%;
@@ -516,7 +516,7 @@ img {
   border-radius: 0;
 }
 .radio_checkbox .radio__visible::before {
-  background: url("/img/icons/checkmark.svg");
+  background: url("../img/icons/checkmark.svg");
   background-repeat: no-repeat;
 }
 

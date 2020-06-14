@@ -1,18 +1,18 @@
 .order{
-    background: url('/img/manyrapsberry.png') center center no-repeat;
+    background: url('../img/manyrapsberry.png') center center no-repeat;
     background-size: cover;
     color: #365a49;
     position: relative;
 
     &::before{
-        content: url('/img/deliverylist.png');
+        content: url('../img/deliverylist.png');
         position: absolute;
         right: 8%;
         top: 54%;
     }
 
     &::after{
-        content: url('/img/blueberry.png');
+        content: url('../img/blueberry.png');
         position: absolute;
         bottom: 22%;
         left: 10%;
