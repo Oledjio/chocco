@@ -547,3 +547,37 @@ img {
   background-color: #365a49;
   border-radius: 50%;
 }
+
+.pager {
+  position: fixed;
+  top: 34%;
+  right: 22%;
+}
+
+.pager__item {
+  padding-bottom: 5px;
+}
+.pager__item_active .pager__link {
+  border-color: white;
+}
+
+.pager__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px transparent;
+  display: block;
+  position: relative;
+}
+.pager__link::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
