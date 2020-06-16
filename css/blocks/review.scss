@@ -24,15 +24,15 @@
     background-image: url('../img/branch.png');
     background-position: right top;
     background-repeat: no-repeat;
-    padding: 51px 188px 34px 45px;
+    padding: rem(51px) rem(188px) rem(34px) rem(45px);
     position: relative;
     overflow: hidden;
 
     &::before{
         content: "";
         position: absolute;
-        width: 90px;
-        height: 90px;
+        width: rem(90px);
+        height: rem(90px);
         border-radius: 50%;
         display: block;
         background-color: white;
@@ -45,8 +45,8 @@
     flex: 1;
 }
 .review__avatar{
-    width: 253px;
-    height: 259px;
+    width: rem(253px);
+    height: rem(259px);
     margin-right: 20px;
 }
 .review__img{
@@ -55,18 +55,18 @@
     object-fit: cover;
 }
 .review__title{
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
     color: #000000;
     margin-bottom: 22px;
 }
 .review__text{
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     line-height: normal;
 }
 .review__name{
     color: black;
 }
 .review_marg_bot{
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
 }

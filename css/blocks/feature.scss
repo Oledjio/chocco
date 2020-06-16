@@ -1,9 +1,9 @@
 .feature{
     display: flex;
-    font-size: 16px;
+    font-size: rem(16px);
 
     &__item{
-        margin-right: 43px;
+        margin-right: rem(43px);
         display: flex;
 
         &:last-child{
@@ -12,12 +12,12 @@
     }
     
     &__icon{
-        width: 45px;
+        width: 2.5rem;
     }
 
     &__text{
         line-height: normal;
-        max-width: 85px;
-        padding-left: 11px;
+        max-width: rem(85px);
+        padding-left: rem(11px);
     }
 }

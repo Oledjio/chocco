@@ -2,7 +2,7 @@
     background: url('../img/list.png') right bottom no-repeat;
     background-color: #86c3d7;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: white;
     position: relative;
 
@@ -28,7 +28,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        padding-top: 24px;
-        padding-bottom: 47px;
+        padding-top: rem(24px);
+        padding-bottom: rem(47px);
     }
 }

@@ -2,15 +2,15 @@
     width: 46%;
 
     &__title{
-        font-size: 48px;
+        font-size: rem(48px);
         line-height: normal;
         text-transform: uppercase;
         font-weight: bold;
     }
 
     &__text{
-        font-size: 21px;
-        margin-bottom: 26px;
+        font-size: rem(21px);
+        margin-bottom: rem(26px);
         padding-right: 15%;
     }
 }

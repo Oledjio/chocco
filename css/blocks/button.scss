@@ -1,5 +1,5 @@
 .button{
-    font-size: 19px;
+    font-size: 1.05rem;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 30px;
@@ -7,7 +7,7 @@
 }
 .main__button{
     color: #365a49;
-    padding: 20px 38px 16px 35px;
+    padding: rem(20px) rem(38px) rem(16px) rem(35px);
     background-color: white;
 
     &:hover{
@@ -18,7 +18,7 @@
     }
 }
 .button_submit{
-    padding: 19px 36px;
+    padding: rem(19px) rem(36px);
     color: white;
     background-color: #365a49;
 
@@ -29,7 +29,7 @@
     }
 }
 .button_reset{
-    padding: 22px 26px;
+    padding: rem(22px) rem(26px);
     color: #000;
     background: transparent;
     text-transform: none;

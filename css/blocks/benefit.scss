@@ -29,13 +29,13 @@
     }
 
     &__image{
-        margin-bottom: 18px;
+        margin-bottom: 1rem;
     }
 
     &__image-wrapper{
         display: inline-block;
-        width: 126px;
-        height: 126px;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
         position: relative;
         background-color: #f2f5f4;
@@ -43,8 +43,8 @@
     }
 
     &__img{
-        width: 75px;
-        height: 69px;
+        width: rem(75px);
+        height: rem(69px);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -53,8 +53,8 @@
 
     &__title{
         color: black;
-        font-size: 27px;
+        font-size: 1.5rem;
         font-weight: bold;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
     }
 }

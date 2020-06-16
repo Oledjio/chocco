@@ -1,3 +1,11 @@
+//функция для перевода в rem
+
+$rootFontsize: 18px;
+
+@function rem($size) {
+  @return $size / $rootFontsize * 1rem;
+}
+
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
@@ -29,4 +37,20 @@
 
 
 
-// @import url('/css/blocks/pager.css');
+//mixins
+@mixin mobile {
+    @media (max-width: 480px){
+        .container{
+            max-width: 460px;
+        }
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px){
+        .container{
+            max-width: 720px;
+        }
+    }
+}
+
