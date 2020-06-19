@@ -1,3 +1,25 @@
+//mixins
+@mixin tablet {
+    @media (max-width: 768px){
+        @content;
+        .container{
+            max-width: 768px;
+            margin: 0 rem(24px);
+        }
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 480px){
+        @content;
+        .container{
+            max-width: 460px;
+            margin: 0 rem(10px);
+        }
+    }
+}
+
+
 //функция для перевода в rem
 
 $rootFontsize: 18px;
@@ -34,23 +56,9 @@ $rootFontsize: 18px;
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/pager";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/adress";
+@import "blocks/socials";
 
-
-
-//mixins
-@mixin mobile {
-    @media (max-width: 480px){
-        .container{
-            max-width: 460px;
-        }
-    }
-}
-
-@mixin tablet {
-    @media (max-width: 768px){
-        .container{
-            max-width: 720px;
-        }
-    }
-}
 

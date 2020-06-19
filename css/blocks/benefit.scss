@@ -1,18 +1,37 @@
 .benefit{
     display: flex;
 
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
     &__item{
         flex: 1;
         margin: 0 3%;
         text-align: center;
         position: relative;
-
+        @include mobile{
+            display: flex;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: rem(31px);
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         &::before{
             content: url('../img/dot.png');
             position: absolute;
             top: 50px;
             right: 0;
             transform: translateX(92%);
+            @include tablet{
+                display: none;
+            }
+            @include mobile{
+                display: none;
+            }
         }
 
         &:last-child{
@@ -29,17 +48,29 @@
     }
 
     &__image{
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        background-color: #f2f5f4;
         margin-bottom: 1rem;
+        margin-left: rem(72px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet{
+            margin-bottom: 0;
+        }
     }
 
     &__image-wrapper{
         display: inline-block;
-        width: 7rem;
-        height: 7rem;
+        width: rem(69px);
+        height: rem(75px);
         border-radius: 50%;
         position: relative;
         background-color: #f2f5f4;
         overflow: hidden;
+        fill: black;
     }
 
     &__img{
@@ -56,5 +87,15 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: rem(11px);
+        @include tablet{
+            margin-bottom: 0;
+        }
+    }
+}
+.benefit__desc{
+    @include mobile{
+        text-align: left;
+        padding-right: 12%;
+        margin-left: 3%;
     }
 }

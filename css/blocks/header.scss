@@ -2,8 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet{
+        .menu,.telephone{
+            display: none;
+        }
+        .menu-icon{
+            display: block;
+        }
+    }
 }
 .header__menu{
     margin-left: rem(44px);
     margin-right: rem(46px);
 }
+

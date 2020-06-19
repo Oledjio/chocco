@@ -6,11 +6,33 @@
         line-height: normal;
         text-transform: uppercase;
         font-weight: bold;
+        @include mobile{
+            font-size: rem(40px);
+            line-height: 1;
+        }
     }
 
     &__text{
         font-size: rem(21px);
         margin-bottom: rem(26px);
         padding-right: 15%;
+
+        @include tablet{
+            padding: 0 23%;
+        }
+        @include mobile{
+            padding: 0 13%;
+            line-height: 1;
+        }
+    }
+
+    @include tablet{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        // margin-bottom: 18%;
+    }
+    @include mobile{
+        margin-bottom: 13%;  
     }
 }

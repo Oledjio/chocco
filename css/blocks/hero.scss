@@ -6,17 +6,33 @@
     color: white;
     position: relative;
 
+    @include tablet{
+        background-position: right top 30px;
+        // min-height: rem(1000px);
+    }
+    @include mobile{
+        background-size: 68%;
+        background-position: right top 54px;
+        // min-height: rem(800px);
+    }
+
     &::before{
-        content: url('../img/sheet.png');
+        content: url('../img/herolist.png');
         position: absolute;
         bottom: -50px;
         left: 2%;
+        @include tablet{
+            display: none;
+        }
     }
     &::after{
         content: url('../img/decor.png');
         position: absolute;
         bottom: -50px;
         right: 0;
+        @include tablet{
+            display: none;
+        }
     }
 
     &__container{
@@ -30,5 +46,21 @@
         height: 100%;
         padding-top: rem(24px);
         padding-bottom: rem(47px);
+
+        @include tablet{
+            background: url('/img/768/herodecor.png') no-repeat , url('/img/batnik.png') no-repeat;
+            background-size: 48% auto, 48% auto;
+            background-position: center top 42%, center top 29%;
+        }
+        @include mobile{
+            // height: 100%;
+            background-size: 75%;
+            background-position: right 42% top 35%, center top 18%;
+        }
+    }
+}
+.hero__feature{
+    @include tablet{
+        display: none;
     }
 }

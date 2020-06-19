@@ -1,7 +1,11 @@
 .pager{
     position: fixed;
-    top: 340px;
-    right: 300px;
+    top: rem(340px);
+    right: 0;
+
+    @include tablet{
+        display: none;
+    }
 }
 .pager__item{
     padding-bottom: rem(5px);

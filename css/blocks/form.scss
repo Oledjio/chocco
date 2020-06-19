@@ -1,5 +1,12 @@
 .form{
     display: flex;
+    @include tablet{
+        flex-direction: column;
+        padding: 0 rem(130px);
+    }
+    @include mobile{
+        padding: 0;
+    }
 }
 .form__col{
     flex: 1;
@@ -8,10 +15,18 @@
     &:last-child{
         margin-right: 0;
     }
+    @include tablet{
+        &:first-child{
+            margin-right: 0;
+        }
+    }
 }
 .form__wrap{
     display: flex;
     margin-bottom: rem(17px);
+    @include tablet{
+        margin-bottom: 10px;
+    }
 }
 .form__label{
     flex: 1;
@@ -26,10 +41,15 @@
     border: none;
     padding: rem(18px) rem(11px);
     outline: none;
-
+    @include tablet{
+        padding: rem(10px);
+    }
     &_textarea{
         resize: none;
         height: 10rem;
+        @include tablet{
+            height: rem(80px);
+        }
     }
 
     &:focus{
@@ -39,10 +59,22 @@
 .form__radio{
     display: flex;
     flex-wrap: wrap;
+    @include mobile{
+        justify-content: center;
+    }
 }
 .form__name{
-    margin-bottom: rem(3px);
+    margin-bottom: 3px;
+    @include tablet{
+        margin-bottom: 0;
+    }
 }
 .form__radio_marg_bot{
     margin-bottom: rem(35px);
+}
+.form__button{
+    @include tablet{
+        display: flex;
+        justify-content: center;
+    }
 }

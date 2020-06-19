@@ -43,10 +43,15 @@
                         </nav>
                         <a href="tel:+78009039090" class="telephone">
                             <span class="telephone__icon">
-                                <img src="img/icons/phone.svg" alt="" class="telephone__icon-img">
+                                <svg class="telephone__icon-img">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
                             </span>
                             <span class="telephone__number">8 800 903 90 90</span>
                         </a>
+                        <svg class="menu-icon">
+                            <use xlink:href="img/sprite.svg#gamburger"></use>
+                        </svg>
                     </header>
                     <div class="main">
                         <h1 class="main__title">Натуральные шоколадные батончики</h1>
@@ -56,21 +61,21 @@
                     <div class="hero__feature">
                         <ul class="feature">
                             <li class="feature__item">
-                                <div class="feature__icon">
-                                    <img src="img/icons/5.svg" alt="">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#list"></use>
+                                </svg>
                                 <p class="feature__text">100% натуральный продукт</p>
                             </li>
                             <li class="feature__item">
-                                <div class="feature__icon">
-                                    <img src="img/icons/6.svg" alt="">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#car"></use>
+                                </svg>
                                 <p class="feature__text">3-5 дней доставка <br>по РФ</p>
                             </li>
                             <li class="feature__item">
-                                <div class="feature__icon">
-                                    <img src="img/icons/4.svg" alt="">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#figure"></use>
+                                </svg>
                                 <p class="feature__text">Не портит фигуру</p>
                             </li>
                         </ul>
@@ -84,9 +89,9 @@
                     <ul class="benefit">
                         <li class="benefit__item">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="img/icons/1.svg" alt="" class="benefit__img">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use xlink:href="img/sprite.svg#people"></use>
+                                </svg>
                             </div>
                             <div class="benefit__desc">
                                 <h2 class="benefit__title">Полезно</h2>
@@ -95,9 +100,9 @@
                         </li>
                         <li class="benefit__item">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="img/icons/3.svg" alt="" class="benefit__img">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use xlink:href="img/sprite.svg#smile"></use>
+                                </svg>
                             </div>
                             <div class="benefit__desc">
                                 <h2 class="benefit__title">Вкусно</h2>
@@ -106,9 +111,9 @@
                         </li>
                         <li class="benefit__item">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="img/icons/2.svg" alt="" class="benefit__img">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use xlink:href="img/sprite.svg#hand"></use>
+                                </svg>
                             </div>
                             <div class="benefit__desc">
                                 <h2 class="benefit__title">Питательно</h2>
@@ -120,7 +125,7 @@
             </section>
             <section class="section review-section">
                 <div class="container">
-                    <h2 class="section__title">Отзывы </h2>
+                    <h2 class="section__title review-section__title">Отзывы </h2>
                     <div class="review review_marg_bot">
                         <div class="review__avatar">
                             <img src="img/reviews/photo1.jpg" alt="" class="review__img">
@@ -222,6 +227,58 @@
                     </form>
                 </div>
             </section>
+            <div class="map">  
+                <div class="map__image">
+                    <img src="img/map.png" alt="" class="map__img">
+                </div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <adress class="adress">
+                            <p class="adress__text">Москва, ул. Новый Арбат, д.31/12</p>
+                            <a href="tel:+78009039090" class="telephone telephone_color_green adress__link">
+                                <span class="telephone__icon">
+                                    <svg class="telephone__icon-img telephone__icon_green">
+                                        <use xlink:href="img/sprite.svg#phone"></use>
+                                    </svg>
+                                </span>
+                                <span class="telephone__number adress__number">8 800 903 90 90</span>
+                            </a>
+                        </adress>
+                        <div class="socials">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg class="socilas__svg">
+                                            <use xlink:href="img/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg class="socilas__svg">
+                                            <use xlink:href="img/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg class="socilas__svg">
+                                            <use xlink:href="img/sprite.svg#insta"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg class="socilas__svg">
+                                            <use xlink:href="img/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
     <nav class="pager">
