@@ -48,7 +48,7 @@
         padding-bottom: rem(47px);
 
         @include tablet{
-            background: url('/img/768/herodecor.png') no-repeat , url('/img/batnik.png') no-repeat;
+            background: url('../img/768/herodecor.png') no-repeat , url('../img/batnik.png') no-repeat;
             background-size: 48% auto, 48% auto;
             background-position: center top 42%, center top 29%;
         }

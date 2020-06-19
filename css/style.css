@@ -146,7 +146,7 @@ img {
 }
 @media (max-width: 768px) {
   .hero__container {
-    background: url("/img/768/herodecor.png") no-repeat, url("/img/batnik.png") no-repeat;
+    background: url("../img/768/herodecor.png") no-repeat, url("../img/batnik.png") no-repeat;
     background-size: 48% auto, 48% auto;
     background-position: center top 42%, center top 29%;
   }
@@ -488,6 +488,9 @@ img {
   margin: 0 3%;
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   .benefit__item {

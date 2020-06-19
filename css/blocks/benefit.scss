@@ -11,6 +11,9 @@
         margin: 0 3%;
         text-align: center;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include mobile{
             display: flex;
             margin-right: 0;
