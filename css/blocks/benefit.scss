@@ -15,6 +15,12 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @include tablet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
         @include mobile{
             display: flex;
             flex-direction: row;

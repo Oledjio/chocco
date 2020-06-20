@@ -493,6 +493,18 @@ img {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .benefit__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .benefit__item .container {
+    max-width: 768px;
+    margin: 0 1.3333333333rem;
+  }
+}
 @media (max-width: 480px) {
   .benefit__item {
     display: flex;
