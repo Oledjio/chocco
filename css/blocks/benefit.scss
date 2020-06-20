@@ -14,8 +14,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         @include mobile{
             display: flex;
+            flex-direction: row;
             margin-right: 0;
             margin-left: 0;
             margin-bottom: rem(31px);
@@ -39,6 +41,7 @@
 
         &:last-child{
             margin-right: 0;
+            margin-left: 0;
 
             &::before{
                 display: none;
@@ -46,6 +49,7 @@
         }
 
         &:first-child{
+            margin-right: 0;
             margin-left: 0;
         }
     }
@@ -56,12 +60,15 @@
         border-radius: 50%;
         background-color: #f2f5f4;
         margin-bottom: 1rem;
-        margin-left: rem(72px);
         display: flex;
         align-items: center;
         justify-content: center;
         @include tablet{
             margin-bottom: 0;
+        }
+        @include mobile{
+            height: rem(126px);
+            width: rem(322px);
         }
     }
 
@@ -98,7 +105,7 @@
 .benefit__desc{
     @include mobile{
         text-align: left;
-        padding-right: 12%;
+        padding-right: 3%;
         margin-left: 3%;
     }
 }
