@@ -640,7 +640,7 @@ img {
 }
 @media (max-width: 768px) {
   .review-section {
-    background: url("/img/reviewsstraw.png"), url("/img/strawberry.png"), url("/img/reviewslist.png");
+    background: url("../img/reviewsstraw.png"), url("../img/strawberry.png"), url("../img/reviewslist.png");
     background-position: left -5% bottom -7%, right top, left -4% bottom -18%;
     background-repeat: no-repeat;
   }
