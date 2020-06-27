@@ -4,4 +4,7 @@
 .map__img{
     width: 100%;
     height: 100%;
+    @include tablet{
+        height: 100vh;
+    }
 }

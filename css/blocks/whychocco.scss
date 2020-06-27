@@ -14,6 +14,7 @@
         content: url('../img/rapsberry.png');
         position: absolute;
         top: 77%;
+        z-index: 2;
         @include mobile{
             display: none;
         }

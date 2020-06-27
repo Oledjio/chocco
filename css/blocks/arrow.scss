@@ -1,0 +1,28 @@
+.arrow{
+    display: flex;
+    align-items: center;
+    @include tablet{
+        display: none;
+    }
+}
+.arrow__link{
+    display: flex;
+    height: rem(28px);
+    width: rem(13px);
+}
+.arrow__left{
+    transform: rotate(180deg);
+    
+}
+.arrow_marg_right{
+    margin-right: rem(65px);
+    @include tablet{
+        margin-right: rem(25px);
+    }
+}
+.arrow_marg_left{
+    margin-left: rem(40px);
+    @include tablet{
+        margin-left: rem(50px);
+    }
+}

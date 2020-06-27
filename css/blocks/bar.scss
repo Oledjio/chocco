@@ -1,0 +1,86 @@
+.bar{
+    background-color: #f8faf9;
+    height: 100vh;
+    min-height: 36.1111111111rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-bottom: rem(110px);
+    &::before{
+        
+        content: url('../img/bar-chocco-list.png');
+        position: absolute;
+        right: 0;
+        bottom: -216px;
+        @include tablet{
+            content: url('/img/768/bar-list.png');
+        }
+        @include mobile{
+            content: url('/img/480/bar-list.png');
+            bottom: 0;
+        }
+    }
+    &::after{
+        content: url('../img/bar-choco-berry.png');
+        position: absolute;
+        right: 0;
+        bottom: -74px;
+        @include tablet{
+            content: url('/img/768/bar-berry.png');
+        }
+        @include mobile{
+            bottom: -58px;
+        }
+    }
+}
+.bar__container{
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.bar-wrap{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: rem(40px);
+    width: rem(90px);
+    padding: rem(9px) rem(20px) 1px;
+    background-color: #86c3d7;
+    border-radius: 5px;
+    &:hover{
+        background-color: #60aacc;
+        .compound{
+            display: block;
+        }
+    }
+    @include tablet{
+        display: none;
+    }
+}
+.bar-wrap__img{
+    width: rem(51px);
+    height: rem(51px);
+    fill: white;
+}
+.bar-wrap__text{
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bar__arrow{
+    display: flex;
+    align-items: center;
+    .arrow{
+        display: none;
+    }
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(28px);
+        .arrow{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

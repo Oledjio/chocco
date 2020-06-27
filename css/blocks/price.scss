@@ -1,0 +1,22 @@
+.price{
+    display: flex;
+}
+.price__text{
+    font-size: 60px;
+    color: black;
+    line-height: 1;
+    margin-right: rem(30px);
+}
+.price__value{
+    width: rem(24px);
+    height: rem(25px);
+}
+.price__button{
+    color: white;
+    padding: rem(18px) rem(38px) rem(17px) rem(36px);
+    background-color: #365a49;
+    &:hover{
+        background-color: #2e4e3f;
+        transition: 0.3s;
+    }
+}

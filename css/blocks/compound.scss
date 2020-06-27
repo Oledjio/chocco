@@ -1,0 +1,42 @@
+.compound{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: rem(90px);
+    padding: rem(24px) rem(20px) rem(23px) rem(32px);
+}
+.compound__wrap{
+    margin-right: 9%;
+    display: flex;
+    align-items: center;
+    @include tablet{
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+.compound__item{
+    display: flex;
+    margin-bottom: rem(20px);
+    align-items: center;
+}
+.compound__svg{
+    width: rem(35px);
+    height: rem(35px);
+    margin-right: rem(25px);
+}
+.compound__text{
+    flex: 1;
+    margin-right: rem(26px);
+}
+.compound__img{
+    @include tablet{
+        display: none;
+    }
+}
+.compound__img_tablet{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
