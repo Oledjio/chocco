@@ -999,7 +999,6 @@ img {
   display: flex;
   position: relative;
   align-items: center;
-  padding-bottom: 6.1111111111rem;
 }
 .bar::before {
   content: url("../img/bar-chocco-list.png");
