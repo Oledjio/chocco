@@ -13,10 +13,10 @@
         right: 0;
         bottom: -216px;
         @include tablet{
-            content: url('/img/768/bar-list.png');
+            content: url('../img/768/bar-list.png');
         }
         @include mobile{
-            content: url('/img/480/bar-list.png');
+            content: url('../img/480/bar-list.png');
             bottom: 0;
         }
     }
@@ -26,7 +26,7 @@
         right: 0;
         bottom: -74px;
         @include tablet{
-            content: url('/img/768/bar-berry.png');
+            content: url('../img/768/bar-berry.png');
         }
         @include mobile{
             bottom: -58px;

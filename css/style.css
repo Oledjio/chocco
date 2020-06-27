@@ -1009,12 +1009,12 @@ img {
 }
 @media (max-width: 768px) {
   .bar::before {
-    content: url("/img/768/bar-list.png");
+    content: url("../img/768/bar-list.png");
   }
 }
 @media (max-width: 480px) {
   .bar::before {
-    content: url("/img/480/bar-list.png");
+    content: url("../img/480/bar-list.png");
     bottom: 0;
   }
 }
@@ -1026,7 +1026,7 @@ img {
 }
 @media (max-width: 768px) {
   .bar::after {
-    content: url("/img/768/bar-berry.png");
+    content: url("../img/768/bar-berry.png");
   }
 }
 @media (max-width: 480px) {
