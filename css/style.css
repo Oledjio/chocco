@@ -192,6 +192,7 @@ img {
   height: 1.2222222222rem;
   display: none;
   fill: white;
+  cursor: pointer;
 }
 
 .telephone {
@@ -1272,4 +1273,47 @@ img {
 .price__button:hover {
   background-color: #2e4e3f;
   transition: 0.3s;
+}
+
+.dropdown {
+  height: 100vh;
+  width: 100%;
+  background-color: #343739;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.dropdown__active {
+  right: 0;
+  opacity: 1;
+}
+
+.dropdown__icon {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.6666666667rem;
+  padding-right: 1.6666666667rem;
+}
+
+.dropdown__close {
+  height: 1.1111111111rem;
+  width: 1.1111111111rem;
+  fill: white;
+  cursor: pointer;
+}
+
+.dropdown__list {
+  text-align: center;
+}
+
+.dropdown__item {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
 }
