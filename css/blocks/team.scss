@@ -1,7 +1,7 @@
 .team{
     position: relative;
     &::before{
-        content: url('/img/teamberry.png');
+        content: url('../img/teamberry.png');
         height: rem(114px);
         width: rem(104px);
         position: absolute;

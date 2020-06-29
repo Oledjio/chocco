@@ -1322,7 +1322,7 @@ img {
   position: relative;
 }
 .team::before {
-  content: url("/img/teamberry.png");
+  content: url("../img/teamberry.png");
   height: 6.3333333333rem;
   width: 5.7777777778rem;
   position: absolute;
