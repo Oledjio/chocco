@@ -1,0 +1,53 @@
+.team{
+    position: relative;
+    &::before{
+        content: url('/img/teamberry.png');
+        height: rem(114px);
+        width: rem(104px);
+        position: absolute;
+        bottom: rem(-42px);
+        left: 3%;
+    }
+}
+.team__title{
+    margin-bottom: rem(58px);
+}
+.team__img{
+    margin-bottom: rem(26px);
+}
+.team__list{
+    display: flex;
+}
+.team__item{
+    flex: 1;
+    margin-right: rem(20px);
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.team__link{
+    font-size: rem(21px);
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        content: "";
+        border: 8px solid transparent;
+        border-top-color: #365a49;
+        margin-left: 10px; 
+        border-bottom-width: 0;
+    }
+}
+// .team__desc{
+//     display: none
+// }
+.team__position{
+    color: black;
+    text-align: center;
+}
+.team__text{
+    color: #666;
+    text-align: center;
+}

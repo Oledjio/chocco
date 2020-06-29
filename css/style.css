@@ -1317,3 +1317,61 @@ img {
   margin-bottom: 2.5rem;
   cursor: pointer;
 }
+
+.team {
+  position: relative;
+}
+.team::before {
+  content: url("/img/teamberry.png");
+  height: 6.3333333333rem;
+  width: 5.7777777778rem;
+  position: absolute;
+  bottom: -2.3333333333rem;
+  left: 3%;
+}
+
+.team__title {
+  margin-bottom: 3.2222222222rem;
+}
+
+.team__img {
+  margin-bottom: 1.4444444444rem;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  flex: 1;
+  margin-right: 1.1111111111rem;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__link {
+  font-size: 1.1666666667rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__link::after {
+  content: "";
+  border: 8px solid transparent;
+  border-top-color: #365a49;
+  margin-left: 10px;
+  border-bottom-width: 0;
+}
+
+.team__position {
+  color: black;
+  text-align: center;
+}
+
+.team__text {
+  color: #666;
+  text-align: center;
+}

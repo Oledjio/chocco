@@ -9,4 +9,3 @@ gamburgerMenu.addEventListener('click', function(e) {
 closeMenu.addEventListener('click', function(evt){
     dropdownMenu.classList.remove('dropdown__active')
 });
-
