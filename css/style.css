@@ -570,7 +570,7 @@ img {
   background-image: url("../img/branch.png");
   background-position: right top;
   background-repeat: no-repeat;
-  padding: 2.8333333333rem 10.4444444444rem 1.8888888889rem 2.5rem;
+  padding: 2.8333333333rem 0 1.8888888889rem 2.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -639,6 +639,12 @@ img {
 .review__text {
   margin-bottom: 1.6666666667rem;
   line-height: normal;
+  padding-right: 21%;
+}
+@media (max-width: 768px) {
+  .review__text {
+    padding-right: 0;
+  }
 }
 
 .review__name {
@@ -653,6 +659,24 @@ img {
   .review-section__title {
     font-size: 2.2222222222rem;
   }
+}
+
+.review__item {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.review__item_active {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.review-section__list {
+  position: relative;
+}
+
+.review__item_absolute {
+  position: absolute;
 }
 
 .person {
