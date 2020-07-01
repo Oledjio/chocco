@@ -1341,6 +1341,11 @@ img {
   margin-bottom: 2.5rem;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .dropdown__item {
+    margin-bottom: 0.5555555556rem;
+  }
+}
 
 .team {
   position: relative;
