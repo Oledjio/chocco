@@ -1059,6 +1059,12 @@ img {
   background: transparent;
   box-shadow: none;
 }
+.bar__container .slick-slider:focus {
+  outline: none;
+}
+.bar__container .slick-initialized .slick-slide {
+  display: flex;
+}
 
 .bar__item {
   display: flex;
@@ -1178,6 +1184,10 @@ img {
 
 .arrow__prev {
   left: 3%;
+}
+
+li, div:focus {
+  outline: none;
 }
 
 .compound {

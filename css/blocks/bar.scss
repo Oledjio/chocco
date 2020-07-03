@@ -38,6 +38,12 @@
         background: transparent;
         box-shadow: none;
     }
+    .slick-slider:focus{
+        outline: none;
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
 }
 .bar__item{
     display: flex;
