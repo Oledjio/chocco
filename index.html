@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -123,102 +124,184 @@
                 </div>
             </section>
             <section class="bar">
-                <div class="arrow arrow_marg_right">
-                    <a href="#" class="arrow__link">
+                <div class="arrow arrow__prev">
+                    <a href="#" class="arrow__link arrow__link_prev">
                         <svg class="arrow__left">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
                     </a>
                 </div>
                 <div class="container bar__container">
-                    <div class="compound__wrap">
-                        <img src="img/bar-choco-sea.png" alt="" class="compound__img">
-                        <img src="img/768/bar-choco.png" alt="" class="compound__img_tablet">
-                    </div>
-                    <div class="about-bar">
-                        <div class="bar-wrap">
-                            <svg class="bar-wrap__img">
-                                <use xlink:href="img/sprite.svg#chocolate"></use>
-                            </svg>
-                            <p class="bar-wrap__text">Состав</p>
-                            <div class="compound">
-                                <ul class="compound__list"> 
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#oat"></use>
-                                        </svg>
-                                        <p class="compound__text">Овес</p>
-                                        <p class="compound__weight">25 г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#seaweed"></use>
-                                        </svg>
-                                        <p class="compound__text">Мор.водоросли</p>
-                                        <p class="compound__weight">15&nbsp;г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#almond"></use>
-                                        </svg>
-                                        <p class="compound__text">Миндаль</p>
-                                        <p class="compound__weight">20 г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#powder"></use>
-                                        </svg>
-                                        <p class="compound__text">Сухое молоко</p>
-                                        <p class="compound__weight">10 г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#seeds"></use>
-                                        </svg>
-                                        <p class="compound__text">Тыкв.семечки</p>
-                                        <p class="compound__weight">20 г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#honey"></use>
-                                        </svg>
-                                        <p class="compound__text">Зам.сахара</p>
-                                        <p class="compound__weight">4 г</p>
-                                    </li>
-                                    <li class="compound__item">
-                                        <svg class="compound__svg">
-                                            <use xlink:href="img/sprite.svg#heart"></use>
-                                        </svg>
-                                        <p class="compound__text">Какао бобы</p>
-                                        <p class="compound__weight">4 г</p>
-                                    </li>
-                                </ul>
+                    <ul class="bar__list slider">
+                        <li class="bar__item">
+                            <div class="compound__wrap">
+                                <img src="img/768/bar-choco.png" alt="" class="compound__img_tablet">
                             </div>
-                        </div>
-                        <h2 class="about-bar__title">Батончик "Морские водоросли"</h2>
-                        <p class="about-bar__text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и&nbsp;какао бобы.</p>
-                        <div class="composition">
-                            <div class="calories">
-                                <p class="calories__text">Калорийность</p>
-                                <p class="calories__amount">120 ккал</p>
+                            <div class="about-bar">
+                                <div class="bar-wrap">
+                                    <svg class="bar-wrap__img">
+                                        <use xlink:href="img/sprite.svg#chocolate"></use>
+                                    </svg>
+                                    <p class="bar-wrap__text">Состав</p>
+                                    <div class="compound">
+                                        <ul class="compound__list"> 
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#oat"></use>
+                                                </svg>
+                                                <p class="compound__text">Овес</p>
+                                                <p class="compound__weight">25 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#seaweed"></use>
+                                                </svg>
+                                                <p class="compound__text">Мор.водоросли</p>
+                                                <p class="compound__weight">15&nbsp;г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#almond"></use>
+                                                </svg>
+                                                <p class="compound__text">Миндаль</p>
+                                                <p class="compound__weight">20 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#powder"></use>
+                                                </svg>
+                                                <p class="compound__text">Сухое молоко</p>
+                                                <p class="compound__weight">10 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#seeds"></use>
+                                                </svg>
+                                                <p class="compound__text">Тыкв.семечки</p>
+                                                <p class="compound__weight">20 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#honey"></use>
+                                                </svg>
+                                                <p class="compound__text">Зам.сахара</p>
+                                                <p class="compound__weight">4 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#heart"></use>
+                                                </svg>
+                                                <p class="compound__text">Какао бобы</p>
+                                                <p class="compound__weight">4 г</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h2 class="about-bar__title">Батончик "Морские водоросли"</h2>
+                                <p class="about-bar__text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и&nbsp;какао бобы.</p>
+                                <div class="composition">
+                                    <div class="calories">
+                                        <p class="calories__text">Калорийность</p>
+                                        <p class="calories__amount">120 ккал</p>
+                                    </div>
+                                    <div class="weight">
+                                        <p class="weight__text">Вес</p>
+                                        <p class="weight__amount">98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p class="price__text">140
+                                        <svg class="price__value">
+                                            <use xlink:href="img/sprite.svg#rub"></use>
+                                        </svg>
+                                    </p>
+                                    <button class="button price__button">Заказать</button>
+                                </div>
                             </div>
-                            <div class="weight">
-                                <p class="weight__text">Вес</p>
-                                <p class="weight__amount">98 грамм</p>
+                        </li>
+                        <li class="bar__item">
+                            <div class="compound__wrap">
+                                <img src="img/768/bar-choco-grape.png" alt="" class="compound__img_tablet">
                             </div>
-                        </div>
-                        <div class="price">
-                            <p class="price__text">140
-                                <svg class="price__value">
-                                    <use xlink:href="img/sprite.svg#rub"></use>
-                                </svg>
-                            </p>
-                            <button class="button price__button">Заказать</button>
-                        </div>
-                    </div>
+                            <div class="about-bar">
+                                <div class="bar-wrap">
+                                    <svg class="bar-wrap__img">
+                                        <use xlink:href="img/sprite.svg#chocolate"></use>
+                                    </svg>
+                                    <p class="bar-wrap__text">Состав</p>
+                                    <div class="compound">
+                                        <ul class="compound__list"> 
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#grape"></use>
+                                                </svg>
+                                                <p class="compound__text">Виноград</p>
+                                                <p class="compound__weight">25 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#nut"></use>
+                                                </svg>
+                                                <p class="compound__text">Грецкий орех</p>
+                                                <p class="compound__weight">32&nbsp;г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#almond"></use>
+                                                </svg>
+                                                <p class="compound__text">Кунжутное семя</p>
+                                                <p class="compound__weight">20 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#powder"></use>
+                                                </svg>
+                                                <p class="compound__text">Сухое молоко</p>
+                                                <p class="compound__weight">10 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#honey"></use>
+                                                </svg>
+                                                <p class="compound__text">Зам.сахара</p>
+                                                <p class="compound__weight">4 г</p>
+                                            </li>
+                                            <li class="compound__item">
+                                                <svg class="compound__svg">
+                                                    <use xlink:href="img/sprite.svg#heart"></use>
+                                                </svg>
+                                                <p class="compound__text">Какао бобы</p>
+                                                <p class="compound__weight">4 г</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h2 class="about-bar__title">Батончик "Гранола виноград"</h2>
+                                <p class="about-bar__text">Гранола из морских водорослей, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и&nbsp;какао бобы.</p>
+                                <div class="composition">
+                                    <div class="calories">
+                                        <p class="calories__text">Калорийность</p>
+                                        <p class="calories__amount">110 ккал</p>
+                                    </div>
+                                    <div class="weight">
+                                        <p class="weight__text">Вес</p>
+                                        <p class="weight__amount">95 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p class="price__text">140
+                                        <svg class="price__value">
+                                            <use xlink:href="img/sprite.svg#rub"></use>
+                                        </svg>
+                                    </p>
+                                    <button class="button price__button">Заказать</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="arrow arrow_marg_left">
-                    <a href="#" class="arrow__link">
+                <div class="arrow arrow__next">
+                    <a href="#" class="arrow__link arrow__link_next">
                         <svg class="arrow__right">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
@@ -290,7 +373,7 @@
                 <div class="container ">
                     <h2 class="section__title review-section__title">Отзывы </h2>
                     <ul class="review-section__list">
-                        <li class="review__item review__item_absolute">
+                        <li class="review__item review__item_absolute review__item_active">
                             <div class="review review_marg_bot">
                                 <div class="review__avatar">
                                     <img src="img/reviews/photo2.jpg" alt="" class="review__img">
@@ -314,7 +397,7 @@
                                 </article>
                             </div>
                         </li>
-                        <li class="review__item review__item_active">
+                        <li class="review__item">
                             <div class="review review_marg_bot" >
                                 <div class="review__avatar">
                                     <img src="img/reviews/photo1.jpg" alt="" class="review__img">
@@ -328,7 +411,7 @@
                         </li>
                     </ul>
                     <ul class="person">
-                        <li class="person__item">
+                        <li class="person__item person__item_active">
                             <a href="#" class="person__link">
                                 <img src="img/reviews/photo2.jpg" alt="" class="person__img">
                             </a>
@@ -338,7 +421,7 @@
                                 <img src="img/reviews/photo3.jpg" alt="" class="person__img">
                             </a>
                         </li>
-                        <li class="person__item person__item_active">
+                        <li class="person__item">
                             <a href="#" class="person__link">
                                 <img src="img/reviews/photo1.jpg" alt="" class="person__img">
                             </a>
@@ -519,6 +602,9 @@
             </li>
         </ul>
     </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/slideshow.js"></script>

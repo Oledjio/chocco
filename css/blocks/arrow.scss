@@ -1,8 +1,9 @@
 .arrow{
     display: flex;
     align-items: center;
+    position: relative;
     @include tablet{
-        display: none;
+        bottom: 22%;
     }
 }
 .arrow__link{
@@ -12,17 +13,10 @@
 }
 .arrow__left{
     transform: rotate(180deg);
-    
 }
-.arrow_marg_right{
-    margin-right: rem(65px);
-    @include tablet{
-        margin-right: rem(25px);
-    }
+.arrow__next{
+    right: 3%;
 }
-.arrow_marg_left{
-    margin-left: rem(40px);
-    @include tablet{
-        margin-left: rem(50px);
-    }
+.arrow__prev{
+    left: 3%;
 }

@@ -16,6 +16,7 @@
     margin-bottom: rem(21px);
     @include tablet{
         font-size: rem(30px);
+        text-align: center;
     }
     @include mobile{
         text-align: center;
@@ -23,10 +24,10 @@
 }
 .about-bar__text{
     margin-bottom: 45px;
-    padding-right: 26%;
+    padding-right: 6%;
     @include tablet{
         text-align: center;
-        padding-right: 0;
+        padding: 0 8%;
     }
     @include mobile{
         padding: 0 3%;

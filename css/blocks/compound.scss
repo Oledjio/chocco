@@ -5,6 +5,7 @@
     top: 0;
     left: rem(90px);
     padding: rem(24px) rem(20px) rem(23px) rem(32px);
+    white-space: nowrap;
 }
 .compound__wrap{
     margin-right: 9%;
@@ -13,6 +14,9 @@
     @include tablet{
         justify-content: center;
         margin-right: 0;
+    }
+    @include mobile{
+        margin-right: 9%;
     }
 }
 .compound__item{
@@ -28,15 +32,4 @@
 .compound__text{
     flex: 1;
     margin-right: rem(26px);
-}
-.compound__img{
-    @include tablet{
-        display: none;
-    }
-}
-.compound__img_tablet{
-    display: none;
-    @include tablet{
-        display: block;
-    }
 }
