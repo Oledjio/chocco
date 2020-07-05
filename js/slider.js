@@ -1,11 +1,3 @@
-
-// const slider = $('.slider').bxSlider({
-//     pager: false,
-//     controls: false
-
-// });
-
-
 const slider = $('.slider').slick({
     prevArrow: $('.arrow__link_prev'),
     nextArrow: $('.arrow__link_next')

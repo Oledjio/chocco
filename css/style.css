@@ -852,6 +852,19 @@ img {
   }
 }
 
+.input-error {
+  border: 2px solid #d61010;
+}
+
+.error-modal {
+  color: red;
+}
+
+.button:focus, .button:active {
+  outline: none;
+  box-shadow: none;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1143,7 +1156,7 @@ img {
 
 .about-bar__text {
   margin-bottom: 45px;
-  padding-right: 6%;
+  padding-right: 17%;
 }
 @media (max-width: 768px) {
   .about-bar__text {
@@ -1435,4 +1448,45 @@ li, div:focus {
   .team__text {
     padding: 0 23%;
   }
+}
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal.fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.modal__content {
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  color: white;
+  background-color: #365a49;
+  font-size: 1.0555555556rem;
+  padding: 0.9444444444rem 2.2777777778rem;
+}
+.modal__button:hover {
+  background-color: #2e4e3f;
+  transition: 0.3s;
 }

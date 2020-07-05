@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choco</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -432,16 +433,17 @@
             <section class="section order">
                 <div class="container">
                     <h2 class="section__title order__title">Закажите доставку</h2>
-                    <form action="" class="form">
+                    <form class="form" autocomplete="off">
+                        <input type="hidden" name="to" value="somewhere@mail.ru"></input>
                         <div class="form__col">
                             <div class="form__wrap">
                                 <label class="form__label">
                                     <p class="form__name">Имя</p>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__label">
                                     <p class="form__name">Телефон</p>
-                                    <input type="text" class="form__input">
+                                    <input type="tel" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__wrap">
@@ -473,7 +475,7 @@
                             <div class="form__wrap">
                                 <label class="form__label">
                                     <p class="form__name">Комментарий</p>
-                                    <textarea class="form__input form__input_textarea"></textarea>
+                                    <textarea class="form__input form__input_textarea" name="comment"></textarea>
                                 </label>
                             </div>    
                             <div class="form__radio form__radio_marg_bot">
@@ -602,12 +604,19 @@
             </li>
         </ul>
     </nav>
-    
+    <div class="modal">
+        <div class="modal__container">
+            <p class="modal__content">Сообщение отпарвлено</p>
+            <button class="button modal__button js-submit">Закрыть</button>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

@@ -78,3 +78,13 @@
         justify-content: center;
     }
 }
+.input-error{
+    border: 2px solid #d61010;
+}
+.error-modal{
+    color: red;
+}
+.button:focus, .button:active {
+    outline: none; 
+    box-shadow: none; 
+}
