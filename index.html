@@ -434,16 +434,18 @@
                 <div class="container">
                     <h2 class="section__title order__title">Закажите доставку</h2>
                     <form class="form" autocomplete="off">
-                        <input type="hidden" name="to" value="somewhere@mail.ru"></input>
+                        <input type="hidden" name="to" value="mixier@mail.ru"></input>
                         <div class="form__col">
                             <div class="form__wrap">
                                 <label class="form__label">
                                     <p class="form__name">Имя</p>
-                                    <input type="text" name="name" class="form__input">
+                                    <input type="text" name="name" class="form__input" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label class="form__label">
                                     <p class="form__name">Телефон</p>
-                                    <input type="tel" name="phone" class="form__input">
+                                    <input type="tel" name="phone" class="form__input" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__wrap">
@@ -475,7 +477,8 @@
                             <div class="form__wrap">
                                 <label class="form__label">
                                     <p class="form__name">Комментарий</p>
-                                    <textarea class="form__input form__input_textarea" name="comment"></textarea>
+                                    <textarea class="form__input form__input_textarea" name="comment" required></textarea>
+                                    <div class="error"></div>
                                 </label>
                             </div>    
                             <div class="form__radio form__radio_marg_bot">
