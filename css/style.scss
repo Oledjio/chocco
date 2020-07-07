@@ -2,20 +2,12 @@
 @mixin tablet {
     @media (max-width: 768px){
         @content;
-        // .container{
-        //     max-width: 768px;
-        //     margin: 0 rem(24px);
-        // }
     }
 }
 
 @mixin mobile {
     @media (max-width: 480px){
         @content;
-        // .container{
-        //     max-width: 460px;
-        //     margin: 0 rem(10px);
-        // }
     }
 }
 
@@ -70,5 +62,6 @@ $rootFontsize: 18px;
 @import "blocks/dropdown";
 @import "blocks/team";
 @import "blocks/modal";
+@import "blocks/bar-menu.scss";
 
 

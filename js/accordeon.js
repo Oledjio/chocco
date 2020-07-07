@@ -30,14 +30,14 @@ teamList.addEventListener('click', e =>{
     
 //     // const item = target.closest('.team__item');
 //     if (target.classList.contains('team__link')){
-//         const active = teamList.querySelector('.team__item.is-active');
+//         let active = teamList.querySelector('.team__item.is-active');
 //         if(active){
 //             let activeDesc = active.querySelector('.team__desc');
 //             activeDesc.style.height = '0px';
 //             active.classList.remove('is-active');
 //         }
 
-//         if(!active || active.querySelector('team__link') !== target){
+//         if(!active || active.querySelector('.team__link') !== target){
 //             let element = target.closest(".team__item");
 //             element.classList.add('is-active');
 //             let teamDesc = element.querySelector('.team__desc');

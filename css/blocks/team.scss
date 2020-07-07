@@ -7,6 +7,7 @@
         position: absolute;
         bottom: rem(-42px);
         left: 3%;
+        z-index: 4;
     }
 }
 .team__title{
@@ -24,7 +25,7 @@
             justify-content: center;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 1s;
+            transition: max-height 0.5s;
         }
     }
 }
@@ -71,7 +72,7 @@
 .team__desc{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s;
+    transition: max-height 0.5s;
 }
 .team__item.is-active .team__desc{
     max-height: 100vh;

@@ -1,0 +1,79 @@
+.bar-menu{
+    height: 100vh;
+    background: url('../img/bar-bg.png'), #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.bar-menu__title{
+    color: white;
+    font-size: rem(48px);
+    padding-top: rem(100px);
+    padding-left: rem(80px);
+    @include tablet{
+        padding-left: rem(40px);
+    }
+    @include mobile{
+        font-size: rem(40px);
+        padding-left: 10px;
+        padding-top: rem(80px);
+    }
+}
+.bar-menu__list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+}
+.bar-menu__text{
+    padding: rem(50px) rem(127px) rem(30px) rem(27px);
+    font-size: rem(16px);
+    line-height: 1.5;
+}
+.bar-menu__item{
+    display: flex;
+    height: 100%;
+}
+.bar-menu__header{
+    font-size: rem(48px);
+    font-weight: bold;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+.bar-menu__link{
+    display: flex;
+    width: rem(100px);
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: rem(60px);
+}
+.bar-menu__wrap{
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.bar-menu__item_active .bar-menu__wrap{
+    width: rem(530px);
+}
+.bar-menu__content{
+    background-color: rgba(51, 53, 55, 0.93);
+    height: 100%;
+    min-width: rem(530px);
+}
+.bar-menu__close{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: rem(26px);
+    padding-right: rem(32px);
+}
+.close__object{
+    height: rem(20px);
+    width: rem(20px);
+    fill: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}

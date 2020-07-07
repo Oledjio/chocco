@@ -1349,6 +1349,7 @@ li, div:focus {
   position: absolute;
   bottom: -2.3333333333rem;
   left: 3%;
+  z-index: 4;
 }
 
 .team__title {
@@ -1372,7 +1373,7 @@ li, div:focus {
     justify-content: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height 0.5s;
   }
 }
 
@@ -1427,7 +1428,7 @@ li, div:focus {
 .team__desc {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.8s;
+  transition: max-height 0.5s;
 }
 
 .team__item.is-active .team__desc {
@@ -1499,4 +1500,99 @@ li, div:focus {
 .modal__button:hover {
   background-color: #2e4e3f;
   transition: 0.3s;
+}
+
+.bar-menu {
+  height: 100vh;
+  background: url("../img/bar-bg.png"), #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.bar-menu__title {
+  color: white;
+  font-size: 2.6666666667rem;
+  padding-top: 5.5555555556rem;
+  padding-left: 4.4444444444rem;
+}
+@media (max-width: 768px) {
+  .bar-menu__title {
+    padding-left: 2.2222222222rem;
+  }
+}
+@media (max-width: 480px) {
+  .bar-menu__title {
+    font-size: 2.2222222222rem;
+    padding-left: 10px;
+    padding-top: 4.4444444444rem;
+  }
+}
+
+.bar-menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.bar-menu__text {
+  padding: 2.7777777778rem 7.0555555556rem 1.6666666667rem 1.5rem;
+  font-size: 0.8888888889rem;
+  line-height: 1.5;
+}
+
+.bar-menu__item {
+  display: flex;
+  height: 100%;
+}
+
+.bar-menu__header {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+.bar-menu__link {
+  display: flex;
+  width: 5.5555555556rem;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 3.3333333333rem;
+}
+
+.bar-menu__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.bar-menu__item_active .bar-menu__wrap {
+  width: 29.4444444444rem;
+}
+
+.bar-menu__content {
+  background-color: rgba(51, 53, 55, 0.93);
+  height: 100%;
+  min-width: 29.4444444444rem;
+}
+
+.bar-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.4444444444rem;
+  padding-right: 1.7777777778rem;
+}
+
+.close__object {
+  height: 1.1111111111rem;
+  width: 1.1111111111rem;
+  fill: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }
