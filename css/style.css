@@ -1181,7 +1181,7 @@ img {
 }
 @media (max-width: 768px) {
   .arrow {
-    bottom: 22%;
+    bottom: 15%;
   }
 }
 
@@ -1198,9 +1198,29 @@ img {
 .arrow__next {
   right: 21%;
 }
+@media (max-width: 768px) {
+  .arrow__next {
+    right: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .arrow__next {
+    right: 1%;
+  }
+}
 
 .arrow__prev {
-  left: 21%;
+  left: 19%;
+}
+@media (max-width: 768px) {
+  .arrow__prev {
+    left: 11%;
+  }
+}
+@media (max-width: 480px) {
+  .arrow__prev {
+    left: 1%;
+  }
 }
 
 li, div:focus {

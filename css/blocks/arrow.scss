@@ -3,7 +3,7 @@
     align-items: center;
     position: relative;
     @include tablet{
-        bottom: 22%;
+        bottom: 15%;
     }
 }
 .arrow__link{
@@ -16,9 +16,21 @@
 }
 .arrow__next{
     right: 21%;
+    @include tablet{
+        right: 10%;
+    }
+    @include mobile{
+        right: 1%;
+    }
 }
 .arrow__prev{
-    left: 21%;
+    left: 19%;
+    @include tablet{
+        left: 11%;
+    }
+    @include mobile {
+        left: 1%;
+    }
 }
 li,div:focus{
     outline: none;
