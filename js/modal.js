@@ -90,6 +90,7 @@ sendButton.addEventListener('click', e =>{
                 modalText.style.color = 'red';
             } else{
                 modalText.style.color = '';
+                myForm.reset();
             }
         })
     }

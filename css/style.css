@@ -549,7 +549,7 @@ img {
   content: url("../img/strawberry.png");
   position: absolute;
   right: 0;
-  top: 18%;
+  top: 14%;
 }
 @media (max-width: 768px) {
   .review-section::after {
@@ -717,7 +717,7 @@ img {
 .order::before {
   content: url("../img/deliverylist.png");
   position: absolute;
-  right: 8%;
+  right: 1%;
   top: 54%;
 }
 @media (max-width: 768px) {
@@ -729,7 +729,7 @@ img {
   content: url("../img/blueberry.png");
   position: absolute;
   bottom: 22%;
-  left: 10%;
+  left: 1%;
 }
 @media (max-width: 768px) {
   .order::after {
@@ -775,7 +775,7 @@ img {
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  .form__col:first-child {
+  .form__col {
     margin-right: 0;
   }
 }
@@ -919,7 +919,7 @@ img {
 .pager {
   position: fixed;
   top: 18.8888888889rem;
-  right: 0;
+  right: 15px;
 }
 @media (max-width: 768px) {
   .pager {
@@ -928,10 +928,10 @@ img {
 }
 
 .pager__item {
-  padding-bottom: 0.2777777778rem;
+  padding-bottom: 5px;
 }
 .pager__item_active .pager__link {
-  border-color: white;
+  border-color: red;
 }
 
 .pager__link {
@@ -945,9 +945,9 @@ img {
 .pager__link::before {
   content: "";
   display: block;
-  background-color: white;
-  width: 0.3333333333rem;
-  height: 0.3333333333rem;
+  background-color: red;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -1196,11 +1196,11 @@ img {
 }
 
 .arrow__next {
-  right: 3%;
+  right: 21%;
 }
 
 .arrow__prev {
-  left: 3%;
+  left: 21%;
 }
 
 li, div:focus {

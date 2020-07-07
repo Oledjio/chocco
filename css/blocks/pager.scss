@@ -1,17 +1,17 @@
 .pager{
     position: fixed;
     top: rem(340px);
-    right: 0;
+    right: 15px;
 
     @include tablet{
         display: none;
     }
 }
 .pager__item{
-    padding-bottom: rem(5px);
+    padding-bottom: 5px;
     &_active{
         .pager__link{
-        border-color: white;
+        border-color: red;
         }
     }
 }
@@ -25,9 +25,9 @@
     &::before{
         content: "";
         display: block;
-        background-color: white;
-        width: rem(6px);
-        height: rem(6px);
+        background-color: red;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         position: absolute;
         top: 50%;

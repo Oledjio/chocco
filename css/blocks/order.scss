@@ -8,7 +8,7 @@
     &::before{
         content: url('../img/deliverylist.png');
         position: absolute;
-        right: 8%;
+        right: 1%;
         top: 54%;
         @include tablet{
             display: none;
@@ -19,7 +19,7 @@
         content: url('../img/blueberry.png');
         position: absolute;
         bottom: 22%;
-        left: 10%;
+        left: 1%;
         @include tablet{
             display: none;
         }

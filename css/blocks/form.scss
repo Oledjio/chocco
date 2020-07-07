@@ -16,9 +16,7 @@
         margin-right: 0;
     }
     @include tablet{
-        &:first-child{
-            margin-right: 0;
-        }
+        margin-right: 0;
     }
 }
 .form__wrap{
