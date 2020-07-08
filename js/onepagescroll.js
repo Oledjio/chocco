@@ -18,7 +18,9 @@ scroll.addEventListener('wheel', function(e) {
     } else if (currentSection > (sections.length - 1)){
         currentSection = (sections.length - 1);
     }
+    
     scrollToSection(currentSection);
+    activeClass(currentSection)
 });
 
 function scrollToSection(i) {
@@ -26,4 +28,11 @@ function scrollToSection(i) {
         behavior: 'smooth'
     });
 }
-
+function activeClass(index){
+    if (!pager[index].classList.contains('pager__item_active')){
+        for (let i = 0; i<pager.length; i++){
+            pager[i].classList.remove('pager__item_active');
+        }
+        pager[index].classList.add('pager__item_active');
+    }
+}
