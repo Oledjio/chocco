@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choco</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,25 +19,25 @@
                         <nav class="menu header__menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#hero" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Баточники</a>
+                                    <a href="#bar" class="menu__link">Баточники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Меню</a>
+                                    <a href="#bar-menu" class="menu__link">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#review-section" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#player" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#maps" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -57,7 +56,7 @@
                     <div class="main">
                         <h1 class="main__title">Натуральные шоколадные батончики</h1>
                         <p class="main__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                        <button class="button main__button">Заказать</button>
+                        <a href="#order" class="button main__button">Заказать</a>
                     </div>
                     <div class="hero__feature">
                         <ul class="feature">
@@ -216,7 +215,7 @@
                                             <use xlink:href="img/sprite.svg#rub"></use>
                                         </svg>
                                     </p>
-                                    <button class="button price__button">Заказать</button>
+                                    <a href="#order" class="button price__button price__link">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -483,6 +482,30 @@
                     </ul>
                 </div>
             </section>
+            <section class="section player" id="player">
+                <div class="container">
+                    <h2 class="section__title player__title">Как мы работаем</h2>
+                    <div class="video">
+                        <video src="video/videoplayback.mp4" class="video__player" poster="img/videoscreen.png" id="video"></video>
+                        <svg class="video__start">
+                            <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                        <div class="controls">
+                            <button class="controls__play">
+                                <img src="img/icons/play.svg" class="controls__start">
+                                <img src="img/icons/pause.svg" class="controls__pause">
+                            </button>
+                            <input type="range" class="controls__duration" value="0">
+                            <button class="controls__sound">
+                                <svg class="controls__image">
+                                    <use xlink:href="img/sprite.svg#volume"></use>
+                                </svg>
+                            </button>
+                            <input type="range" class="controls__volume" step="0.1" min="0" max="1">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section order" id="order">
                 <div class="container">
                     <h2 class="section__title order__title">Закажите доставку</h2>
@@ -642,19 +665,19 @@
                 <a href="#team" class="pager__link"></a>
             </li>
             <li class="pager__item">
-                <a href="#" class="pager__link"></a>
+                <a href="#bar-menu" class="pager__link"></a>
             </li>
             <li class="pager__item">
-                <a href="#" class="pager__link"></a>
+                <a href="#review-section" class="pager__link"></a>
             </li>
             <li class="pager__item">
-                <a href="#" class="pager__link"></a>
+                <a href="#player" class="pager__link"></a>
             </li>
             <li class="pager__item">
-                <a href="#" class="pager__link"></a>
+                <a href="#order" class="pager__link"></a>
             </li>
             <li class="pager__item">
-                <a href="#" class="pager__link"></a>
+                <a href="#maps" class="pager__link"></a>
             </li>
         </ul>
     </nav>
@@ -668,7 +691,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
     <script src="js/slider.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/accordeon.js"></script>
@@ -676,5 +699,8 @@
     <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
     <script src="js/onepagescroll.js"></script>
+    <!-- <script src="js/onepagescrolljq.js"></script> -->
+    <script src="js/gorizontal-accordeon.js"></script>
+    <script src="js/player.js"></script>
 </body>
 </html>

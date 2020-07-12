@@ -1,0 +1,67 @@
+.player{
+    position: relative;
+    &::before{
+        content: url('../../img/workberry.png');
+        position: absolute;
+        bottom: rem(-120px);
+        right: 0;
+        z-index: 15;
+    }
+}
+.player__title{
+    @include mobile{
+        font-size: rem(40px);
+    }
+}
+.video{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    width: rem(640px);
+    &:hover{
+        .controls{
+            display: flex;
+        }
+    }
+    @include tablet{
+        max-width: rem(600px);
+        width: 95%;
+    }
+    @include mobile{
+        max-height: 295px;
+        max-width: rem(400px);
+    }
+    &::after{
+        content: url('../../img/worklist.png');
+        position: absolute;
+        bottom: rem(20px);
+        left: rem(-113px);
+        @include tablet{
+            display: none;
+        }
+    }
+    &::before{
+        content: url('../../img/secondworklist.png');
+        position: absolute;
+        top: rem(-47px);
+        right: rem(-61px);
+        @include tablet{
+            display: none;
+        }
+    }
+}
+.video__player{
+    width: 100%;
+}
+.video__start{
+    height: rem(120px);
+    width: rem(80px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+    cursor: pointer;
+    display: block;
+}

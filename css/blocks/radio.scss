@@ -22,12 +22,9 @@
 }
 .radio__elem{
     display: none;
-
-    &:checked ~ .radio__visible{
-        &::before{
-            display: block;
-        }
-    }
+}
+.radio__elem:checked + .radio__visible::before {
+    display: block;
 }
 .radio__visible{
     margin-right: 9px;

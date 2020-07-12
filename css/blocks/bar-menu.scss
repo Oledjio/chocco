@@ -57,11 +57,17 @@
 }
 .bar-menu__item_active .bar-menu__wrap{
     width: rem(530px);
+    @include tablet{
+        width: calc(100vw - 17rem);
+    }
 }
 .bar-menu__content{
     background-color: rgba(51, 53, 55, 0.93);
     height: 100%;
     min-width: rem(530px);
+    @include tablet{
+        min-width: calc(100vw - 17rem);
+    }
 }
 .bar-menu__close{
     display: flex;

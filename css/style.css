@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap");
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 html {
@@ -20,7 +20,7 @@ body {
 .wrapper {
   overflow: hidden;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   min-width: 0;
 }
 
@@ -73,6 +73,10 @@ table {
 img {
   display: block;
   max-width: 100%;
+}
+
+.maincontent {
+  height: 100%;
 }
 
 .hero {
@@ -174,6 +178,8 @@ img {
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__link {
@@ -199,6 +205,7 @@ img {
   font-size: 1.3333333333rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .telephone__icon-img {
@@ -891,7 +898,8 @@ img {
 .radio__elem {
   display: none;
 }
-.radio__elem:checked ~ .radio__visible::before {
+
+.radio__elem:checked + .radio__visible::before {
   display: block;
 }
 
@@ -1594,11 +1602,21 @@ li, div:focus {
 .bar-menu__item_active .bar-menu__wrap {
   width: 29.4444444444rem;
 }
+@media (max-width: 768px) {
+  .bar-menu__item_active .bar-menu__wrap {
+    width: calc(100vw - 17rem);
+  }
+}
 
 .bar-menu__content {
   background-color: rgba(51, 53, 55, 0.93);
   height: 100%;
   min-width: 29.4444444444rem;
+}
+@media (max-width: 768px) {
+  .bar-menu__content {
+    min-width: calc(100vw - 17rem);
+  }
 }
 
 .bar-menu__close {
@@ -1615,4 +1633,168 @@ li, div:focus {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
+}
+
+.player {
+  position: relative;
+}
+.player::before {
+  content: url("../../img/workberry.png");
+  position: absolute;
+  bottom: -6.6666666667rem;
+  right: 0;
+  z-index: 15;
+}
+
+@media (max-width: 480px) {
+  .player__title {
+    font-size: 2.2222222222rem;
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  width: 35.5555555556rem;
+}
+.video:hover .controls {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .video {
+    max-width: 33.3333333333rem;
+    width: 95%;
+  }
+}
+@media (max-width: 480px) {
+  .video {
+    max-height: 295px;
+    max-width: 22.2222222222rem;
+  }
+}
+.video::after {
+  content: url("../../img/worklist.png");
+  position: absolute;
+  bottom: 1.1111111111rem;
+  left: -6.2777777778rem;
+}
+@media (max-width: 768px) {
+  .video::after {
+    display: none;
+  }
+}
+.video::before {
+  content: url("../../img/secondworklist.png");
+  position: absolute;
+  top: -2.6111111111rem;
+  right: -3.3888888889rem;
+}
+@media (max-width: 768px) {
+  .video::before {
+    display: none;
+  }
+}
+
+.video__player {
+  width: 100%;
+}
+
+.video__start {
+  height: 6.6666666667rem;
+  width: 4.4444444444rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+  cursor: pointer;
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  background-color: #404040;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px 1.1111111111rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .controls {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .controls {
+    justify-content: space-between;
+  }
+}
+
+.controls button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+}
+
+.controls__play {
+  margin-right: 1.1111111111rem;
+}
+
+.controls__start {
+  width: 1.1111111111rem;
+  height: 1.3333333333rem;
+}
+
+.controls__pause {
+  width: 1.1111111111rem;
+  height: 1.3333333333rem;
+  display: none;
+}
+
+.controls__duration {
+  width: 70%;
+  margin-right: 1.1111111111rem;
+  cursor: pointer;
+  outline: none;
+}
+@media (max-width: 480px) {
+  .controls__duration {
+    width: 35%;
+  }
+}
+
+.controls__sound {
+  margin-right: 1.1111111111rem;
+}
+
+.controls__image {
+  width: 1.0555555556rem;
+  height: 1.2777777778rem;
+  fill: #626262;
+}
+
+.controls__volume {
+  width: 15%;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type=range] {
+  background-color: #626262;
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #626262;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
 }
