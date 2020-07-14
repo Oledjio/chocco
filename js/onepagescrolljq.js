@@ -3,6 +3,10 @@ const display = $(".maincontent");
 const sideMenu = $(".pager");
 const sideMenuItems = sideMenu.find(".pager__item");
 const dropdown = $('.dropdown');
+const wrapper = $('.wrapper');
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobileOpen = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -86,7 +90,7 @@ $(window).on("wheel", e =>{
 });
 
 $(window).on('keydown', e => {
-
+    const scroller = viewportSсroller();
     const tagName = e.target.tagName.toLowerCase();
     if(tagName != 'input' && tagName != 'textarea'){
         switch (e.keyCode) {
@@ -103,10 +107,11 @@ $(window).on('keydown', e => {
     
 });
 
+$('.wrapper').on('touchmove', e => e.preventDefault());
+
 $("[data-scroll-to]").click(e =>{
     e.preventDefault();
     const $this = $(e.currentTarget);
-    // console.log($this);
     const target = $this.attr('data-scroll-to');
     const reqSection = $(`[data-section-id=${target}]`);
 
@@ -117,17 +122,18 @@ $("[data-scroll-to]").click(e =>{
     }
 });
 
-
-$("body").swipe( {
+if (isMobileOpen){
+    $("body").swipe( {
     
-    swipe:function(event, direction) {
-        const scroller = viewportSсroller();
-        let scrollDirection = '';
-
-        if(direction == 'up') scrollDirection = 'next';
-        if(direction == 'down') scrollDirection = 'prev';
-        
-        scroller[scrollDirection]();
-    },
-
-});
+        swipe:function(event, direction) {
+            const scroller = viewportSсroller();
+            let scrollDirection = '';
+    
+            if(direction == 'up') scrollDirection = 'next';
+            if(direction == 'down') scrollDirection = 'prev';
+            
+            scroller[scrollDirection]();
+        }
+    
+    });
+}
