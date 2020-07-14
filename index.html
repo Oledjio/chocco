@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero" id="hero">
+            <section class="hero" data-sidemenu-theme = "white" data-section-id="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <a href="#" class="logo">
@@ -19,25 +19,25 @@
                         <nav class="menu header__menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#hero" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="hero" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#bar" class="menu__link">Баточники</a>
+                                    <a href="#" class="menu__link" data-scroll-to="bar">Баточники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#team" class="menu__link">Команда</a>
+                                    <a href="#" class="menu__link" data-scroll-to="team">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#bar-menu" class="menu__link">Меню</a>
+                                    <a href="#" class="menu__link" data-scroll-to="bar-menu">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#review-section" class="menu__link">Отзывы</a>
+                                    <a href="#" class="menu__link" data-scroll-to="review-section">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#player" class="menu__link">Как мы работаем</a>
+                                    <a href="#" class="menu__link" data-scroll-to="player">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#maps" class="menu__link">Контакты</a>
+                                    <a href="#" class="menu__link" data-scroll-to="map">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -56,7 +56,7 @@
                     <div class="main">
                         <h1 class="main__title">Натуральные шоколадные батончики</h1>
                         <p class="main__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                        <a href="#order" class="button main__button">Заказать</a>
+                        <a href="#" data-scroll-to="order" class="button main__button">Заказать</a>
                     </div>
                     <div class="hero__feature">
                         <ul class="feature">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section why-chocco" id="why-chocco">
+            <section class="section why-chocco" data-sidemenu-theme = "black" data-section-id="why-chocco">
                 <div class="container">
                     <h2 class="section__title why-chocco__title">Почему Chocco?</h2>
                     <p class="why-chocco__text">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
@@ -123,7 +123,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="bar" id="bar">
+            <section class="bar" data-section-id="bar" data-sidemenu-theme = "black">
                 <div class="arrow arrow__prev">
                     <a href="#" class="arrow__link arrow__link_prev">
                         <svg class="arrow__left">
@@ -215,7 +215,7 @@
                                             <use xlink:href="img/sprite.svg#rub"></use>
                                         </svg>
                                     </p>
-                                    <a href="#order" class="button price__button price__link">Заказать</a>
+                                    <a href="#" data-scroll-to="order" class="button price__button price__link">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -294,7 +294,7 @@
                                             <use xlink:href="img/sprite.svg#rub"></use>
                                         </svg>
                                     </p>
-                                    <button class="button price__button">Заказать</button>
+                                    <a href="#" data-scroll-to="order" class="button price__button">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -308,7 +308,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section team" id="team">
+            <section class="section team" data-section-id="team" data-sidemenu-theme = "black">
                 <div class="container">
                     <h2 class="section__title team__title">Команда</h2>
                     <div class="team__block">
@@ -369,12 +369,12 @@
                     </div>
                 </div>
             </section>
-            <section class="bar-menu" id="bar-menu">
+            <section class="bar-menu" data-section-id="bar-menu" data-sidemenu-theme = "white">
                 <h2 class="bar-menu__title">Меню</h2>
                 <ul class="bar-menu__list">
                     <li class="bar-menu__item">
                         <a href="#" class="bar-menu__link" style="background: url('img/coconut.png') left bottom no-repeat; background-size: cover">
-                            <p class="bar-menu__header">Батончики с молоком</p>
+                            <span class="bar-menu__header">Батончики с молоком</span>
                         </a>
                         <div class="bar-menu__wrap">
                             <div class="bar-menu__content">
@@ -390,7 +390,7 @@
                     </li>
                     <li class="bar-menu__item">
                         <a href="#" class="bar-menu__link" style="background: url('img/bar-honey.png') left bottom no-repeat; background-size: cover">
-                            <p class="bar-menu__header">С медом и фруктами</p>
+                            <span class="bar-menu__header">С медом и фруктами</span>
                         </a>
                         <div class="bar-menu__wrap">
                             <div class="bar-menu__content">
@@ -406,7 +406,7 @@
                     </li>
                     <li class="bar-menu__item">
                         <a href="#" class="bar-menu__link" style="background: url('img/bar-berry.png') left bottom no-repeat; background-size: cover">
-                            <p class="bar-menu__header">Дикие ягоды</p>
+                            <span class="bar-menu__header">Дикие ягоды</span>
                         </a>
                         <div class="bar-menu__wrap">
                             <div class="bar-menu__content">
@@ -422,7 +422,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section review-section" id="review-section">
+            <section class="section review-section" data-section-id="review-section" data-sidemenu-theme = "black">
                 <div class="container ">
                     <h2 class="section__title review-section__title">Отзывы </h2>
                     <ul class="review-section__list">
@@ -482,7 +482,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section player" id="player">
+            <section class="section player" data-section-id="player" data-sidemenu-theme = "black">
                 <div class="container">
                     <h2 class="section__title player__title">Как мы работаем</h2>
                     <div class="video">
@@ -506,7 +506,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section order" id="order">
+            <section class="section order" data-section-id="order" data-sidemenu-theme = "white">
                 <div class="container">
                     <h2 class="section__title order__title">Закажите доставку</h2>
                     <form class="form" autocomplete="off">
@@ -582,7 +582,7 @@
                     </form>
                 </div>
             </section>
-            <section class="map" id="maps">  
+            <section class="map" id="maps" data-section-id="map" data-sidemenu-theme = "black">  
                 <div class="map__image" id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -641,43 +641,57 @@
             </svg>
         </div>
         <ul class="dropdown__list">
-            <li class="dropdown__item">О нас</li>
-            <li class="dropdown__item">Батончики</li>
-            <li class="dropdown__item">Команда</li>
-            <li class="dropdown__item">Меню</li>
-            <li class="dropdown__item">Отзывы</li>
-            <li class="dropdown__item">Как мы работаем</li>
-            <li class="dropdown__item">Контакты</li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="hero" class="dropdown__link">О нас</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="bar" class="dropdown__link">Батончики</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="team" class="dropdown__link">Команда</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="bar-menu" class="dropdown__link">Меню</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="review-section" class="dropdown__link">Отзывы</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="player" class="dropdown__link">Как мы работаем</a>
+            </li>
+            <li class="dropdown__item">
+                <a href="#" data-scroll-to="map" class="dropdown__link">Контакты</a>
+            </li>
         </ul>
     </div>
     <nav class="pager">
         <ul class="pager__list">
             <li class="pager__item pager__item_active">
-                <a href="#hero" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="hero"></a>
             </li>
             <li class="pager__item">
-                <a href="#why-chocco" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="why-chocco"></a>
             </li>
             <li class="pager__item">
-                <a href="#bar" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="bar"></a>
             </li>
             <li class="pager__item">
-                <a href="#team" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="team"></a>
             </li>
             <li class="pager__item">
-                <a href="#bar-menu" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="bar-menu"></a>
             </li>
             <li class="pager__item">
-                <a href="#review-section" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="review-section"></a>
             </li>
             <li class="pager__item">
-                <a href="#player" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="player"></a>
             </li>
             <li class="pager__item">
-                <a href="#order" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="order"></a>
             </li>
             <li class="pager__item">
-                <a href="#maps" class="pager__link"></a>
+                <a href="#" class="pager__link" data-scroll-to="map"></a>
             </li>
         </ul>
     </nav>
@@ -691,15 +705,14 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/slideshow.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
-    <script src="js/onepagescroll.js"></script>
-    <!-- <script src="js/onepagescrolljq.js"></script> -->
+    <script src="js/onepagescrolljq.js"></script>
     <script src="js/gorizontal-accordeon.js"></script>
     <script src="js/player.js"></script>
 </body>

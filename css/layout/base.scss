@@ -61,4 +61,6 @@ img{
 }
 .maincontent{
     height: 100%;
+    transition: transform 0.7s;
+    will-change: transition;
 }

@@ -7,11 +7,19 @@
         display: none;
     }
 }
+.pager_theme_black{
+    .pager__list .pager__item_active .pager__link{
+        border-color: black;
+    }
+    .pager__item .pager__link::before{
+        background-color: black;
+    }
+}
 .pager__item{
     padding-bottom: 5px;
     &_active{
         .pager__link{
-        border-color: red;
+        border-color: white;
         }
     }
 }
@@ -25,7 +33,7 @@
     &::before{
         content: "";
         display: block;
-        background-color: red;
+        background-color: white;
         width: 6px;
         height: 6px;
         border-radius: 50%;

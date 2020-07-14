@@ -20,8 +20,6 @@ scroll.addEventListener('wheel', function(e) {
     } else{
         ++currentSection;
     }
-    e.deltaY.max = 10;
-    e.deltaY.min = -10;
     if (currentSection < 0) {
         currentSection = 0;
     } else if (currentSection > (sections.length - 1)){
@@ -92,8 +90,8 @@ menuList.addEventListener('click', e=>{
     for (link of anchors){
         
         if (link.getAttribute('href').substr(1) == blockId){
-            for(let i = 0; i<pagerList.length; i++){
-                pagerList[i].classList.remove('pager__item_active');
+            for(let i = 0; i<pager.length; i++){
+                pager[i].classList.remove('pager__item_active');
             }
             link.parentNode.classList.add('pager__item_active');
         } 
@@ -113,8 +111,8 @@ mainButton.addEventListener('click', e =>{
     for (link of anchors){
         
         if (link.getAttribute('href').substr(1) == atr){
-            for(let i = 0; i<pagerList.length; i++){
-                pagerList[i].classList.remove('pager__item_active');
+            for(let i = 0; i<pager.length; i++){
+                pager[i].classList.remove('pager__item_active');
             }
             link.parentNode.classList.add('pager__item_active');
         } 
@@ -134,8 +132,8 @@ priceLink.addEventListener('click', e =>{
     for (link of anchors){
         
         if (link.getAttribute('href').substr(1) == atribut){
-            for(let i = 0; i<pagerList.length; i++){
-                pagerList[i].classList.remove('pager__item_active');
+            for(let i = 0; i<pager.length; i++){
+                pager[i].classList.remove('pager__item_active');
             }
             link.parentNode.classList.add('pager__item_active');
         } 

@@ -77,6 +77,8 @@ img {
 
 .maincontent {
   height: 100%;
+  transition: transform 0.7s;
+  will-change: transition;
 }
 
 .hero {
@@ -935,11 +937,18 @@ img {
   }
 }
 
+.pager_theme_black .pager__list .pager__item_active .pager__link {
+  border-color: black;
+}
+.pager_theme_black .pager__item .pager__link::before {
+  background-color: black;
+}
+
 .pager__item {
   padding-bottom: 5px;
 }
 .pager__item_active .pager__link {
-  border-color: red;
+  border-color: white;
 }
 
 .pager__link {
@@ -953,7 +962,7 @@ img {
 .pager__link::before {
   content: "";
   display: block;
-  background-color: red;
+  background-color: white;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1411,6 +1420,7 @@ li, div:focus {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .team__list {
@@ -1444,6 +1454,7 @@ li, div:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .team__link::after {
   content: "";
@@ -1544,6 +1555,7 @@ li, div:focus {
   font-size: 2.6666666667rem;
   padding-top: 5.5555555556rem;
   padding-left: 4.4444444444rem;
+  display: inline-block;
 }
 @media (max-width: 768px) {
   .bar-menu__title {
@@ -1571,6 +1583,18 @@ li, div:focus {
   font-size: 0.8888888889rem;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .bar-menu__text {
+    min-width: 19.4444444444rem;
+    padding-right: 3.5555555556rem;
+  }
+}
+@media (max-width: 480px) {
+  .bar-menu__text {
+    padding-right: 1.9444444444rem;
+    min-width: 15.5555555556rem;
+  }
+}
 
 .bar-menu__item {
   display: flex;
@@ -1583,6 +1607,7 @@ li, div:focus {
   white-space: nowrap;
   transform: rotate(-90deg);
   width: 100%;
+  padding-left: 2.7777777778rem;
 }
 
 .bar-menu__link {
@@ -1590,22 +1615,19 @@ li, div:focus {
   width: 5.5555555556rem;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 3.3333333333rem;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .bar-menu__link {
+    width: 5rem;
+  }
 }
 
 .bar-menu__wrap {
   width: 0;
   overflow: hidden;
   transition: 1s;
-}
-
-.bar-menu__item_active .bar-menu__wrap {
-  width: 29.4444444444rem;
-}
-@media (max-width: 768px) {
-  .bar-menu__item_active .bar-menu__wrap {
-    width: calc(100vw - 17rem);
-  }
 }
 
 .bar-menu__content {
