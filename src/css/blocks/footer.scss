@@ -1,0 +1,18 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding-top: rem(29px);
+    padding-bottom: rem(22px);
+    @include tablet;
+    @include mobile;
+}
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,22 @@
+.socials__list{
+    display: flex;
+}
+.socials__link{
+    display: block;
+    width: rem(20px);
+}
+.socials__item{
+    margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.socilas__svg{
+    fill: #B3B3B3;
+    width: rem(20px);
+    height: rem(20px);
+    &:hover{
+        fill:  black;
+        transition: 0.3s;
+    }
+}

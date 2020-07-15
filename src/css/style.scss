@@ -1,0 +1,55 @@
+
+
+//функция для перевода в rem
+
+$rootFontsize: 18px;
+
+@function rem($size) {
+  @return $size / $rootFontsize * 1rem;
+}
+
+
+
+
+//base
+@import "layout/base";
+
+//blocks
+
+@import "layout/mixins.scss";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/telephone";
+@import "blocks/main";
+@import "blocks/feature";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/whychocco";
+@import "blocks/benefit";
+@import "blocks/review";
+@import "blocks/person";
+@import "blocks/order";
+@import "blocks/form";
+@import "blocks/radio";
+@import "blocks/pager";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/adress";
+@import "blocks/socials";
+@import "blocks/bar";
+@import "blocks/about-bar";
+@import "blocks/arrow";
+@import "blocks/compound";
+@import "blocks/composition";
+@import "blocks/calories";
+@import "blocks/price";
+@import "blocks/dropdown";
+@import "blocks/team";
+@import "blocks/modal";
+@import "blocks/bar-menu.scss";
+@import "blocks/video.scss";
+@import "blocks/controls.scss";
+
+

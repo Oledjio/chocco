@@ -1,0 +1,12 @@
+.adress__link{
+    @include mobile{
+        display: flex;
+        justify-content: center;
+    }
+}
+.adress__text{
+    font-size: rem(20px);
+}
+.adress__number{
+    font-size: rem(21px);
+}
